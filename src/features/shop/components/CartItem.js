@@ -9,7 +9,7 @@ import {
 export default function CartItem({ productDetails }) {
   const getQuantities = useSelector(
     (state) =>
-      state.products.filter((i) => i.id == productDetails.id)[0].quantity
+      state.products.filter((i) => i.id === productDetails.id)[0].quantity
   );
   const dispatch = useDispatch();
   const incrementHandler = () => {

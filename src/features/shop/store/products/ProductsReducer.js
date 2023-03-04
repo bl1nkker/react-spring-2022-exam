@@ -10,6 +10,7 @@ const initialState = {
   products: [
     // { name, category, imageURL, price, quantity }
     {
+      id: 1,
       name: "Цветок",
       category: "Fruits",
       imageURL: "https://i.ibb.co/7bQQYkX/Group-204.png",
@@ -17,6 +18,7 @@ const initialState = {
       quantity: 10,
     },
     {
+      id: 2,
       name: "Orange",
       category: "Fruits",
       imageURL: "https://i.ibb.co/7bQQYkX/Group-204.png",

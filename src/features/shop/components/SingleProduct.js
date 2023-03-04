@@ -5,7 +5,7 @@ import { addToCart } from "../store/products/actions";
 export default function SingleProduct({ productDetails }) {
   const dispatch = useDispatch();
   const isDisable = useSelector((state) => {
-    const item = state.products.filter((i) => i.id == productDetails.id);
+    const item = state.products.filter((i) => i.id === productDetails.id);
     return item[0].quantity <= 0;
   });
   const addToCartHandler = () => {
