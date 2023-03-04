@@ -13,28 +13,7 @@ export default function Navbar() {
       <div className="navBar">
         <div className="flex gap-4">
           <p
-            onClick={() => changeViewHandler("home")}
-            className="navHome"
-            style={{ cursor: "pointer" }}
-            id="lws-home"
-          >
-            {" "}
-            Home{" "}
-          </p>
-          <p
-            onClick={() => changeViewHandler("cart")}
-            className="navCart"
-            style={{ cursor: "pointer" }}
-            id="lws-cart"
-          >
-            <i className="text-xl fa-sharp fa-solid fa-bag-shopping"></i>
-            <span id="lws-totalCart">
-              {cartItemNumber > 10 ? "10+" : cartItemNumber}
-            </span>
-          </p>
-
-          <p
-            onClick={() => changeViewHandler("timer")}
+            onClick={() => changeViewHandler("todo")}
             className="navHome"
             style={{ cursor: "pointer" }}
             id="lws-home"
@@ -50,6 +29,27 @@ export default function Navbar() {
           >
             {" "}
             Anime Api{" "}
+          </p>
+
+          <p
+            onClick={() => changeViewHandler("home")}
+            className="navHome"
+            style={{ cursor: "pointer" }}
+            id="lws-home"
+          >
+            {" "}
+            Shopshop{" "}
+          </p>
+          <p
+            onClick={() => changeViewHandler("cart")}
+            className="navCart"
+            style={{ cursor: "pointer" }}
+            id="lws-cart"
+          >
+            <i className="text-xl fa-sharp fa-solid fa-bag-shopping"></i>
+            <span id="lws-totalCart">
+              {cartItemNumber > 10 ? "10+" : cartItemNumber}
+            </span>
           </p>
         </div>
       </div>
